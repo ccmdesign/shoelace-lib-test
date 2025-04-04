@@ -9,6 +9,10 @@ export default defineNuxtPlugin(async () => {
       import('@shoelace-style/shoelace/dist/components/badge/badge.js');
       import('@shoelace-style/shoelace/dist/components/icon/icon.js');
       import('@shoelace-style/shoelace/dist/components/select/select.js');
+
+      import('@shoelace-style/shoelace/dist/translations/es.js');
+      import('@shoelace-style/shoelace/dist/translations/fr.js');
+      import('@shoelace-style/shoelace/dist/translations/en.js');
       // import('@shoelace-style/shoelace/dist/components/icon-button/icon-button.js');
       // import('@shoelace-style/shoelace/dist/components/input/input.js');
       // import('@shoelace-style/shoelace/dist/components/alert/alert.js');
