@@ -3,6 +3,11 @@ import path from 'node:path';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineNuxtConfig({
+  content: {
+    experimental: {
+      clientDB: true
+    }
+  },
   app: {
     head: {
       script: [

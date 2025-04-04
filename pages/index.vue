@@ -1,13 +1,12 @@
 <script setup>
 const { locale } = useI18n()
-const route = useRoute()
-const data = await queryContent(locale.value, 'post').find()
+const data = await queryContent(locale.value).where({ lang: locale.value }).findOne()
 
 </script>
 
 <template>
   <div class="container">
-    <Card :card="data[0]"/>
+    <Card :card="data"/>
   </div>
 
 </template>
