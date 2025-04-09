@@ -28,7 +28,7 @@ const onLocaleChanged = (code) => {
 
 <style scoped lang="scss">
 nav {
-  background-color: #333;
+  background-color: var(--custom-color-primary, #333);
   color: white;
   padding: 10px;
 

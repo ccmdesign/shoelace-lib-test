@@ -5,7 +5,7 @@ const { locale } = useI18n()
 
 </script>
 <template>
-  <Html :class="`sl-theme-${store.theme}`" :lang="locale">
+  <Html :class="`sl-theme-${store.selectedTheme}`" :lang="locale">
     <div>
       <NavBar />
       <slot />

@@ -64,7 +64,7 @@ const isActive = ref(false);
       </div>
 
       <div slot="footer" class="principles-list">
-        <sl-badge v-for="(item, index) in card.principles" :variant="BAGDE_VARIANTS[index]" pill>{{ item }}</sl-badge>
+        <sl-badge v-for="(item, index) in card.principles" :variant="BAGDE_VARIANTS[index]" pill class="badge">{{ item }}</sl-badge>
       </div>
     </sl-card>
   
@@ -74,9 +74,9 @@ const isActive = ref(false);
 <style lang="scss" scoped>
 
 // you can define style to a component section using parts;
-// .card::part(base) {
-//   width: 70%;
-// }
+.card::part(base) {
+  background-color: var(--custom-color-secondary-200);
+}
 
 // or add a class to the component
 .row-container {

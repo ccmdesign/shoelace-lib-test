@@ -1,12 +1,16 @@
 import { defineStore } from 'pinia'
 
 export const useThemeStore = defineStore('theme', () => {
-  const theme = ref('light')
+  const themes = computed(() => {
+    return ['light', 'dark', 'custom-001']
+  })
+
+  const selectedTheme = ref('custom-001')
   
-  const toggleTheme = () => {
-    theme.value = theme.value === 'dark' ? 'light' : 'dark'
-    document.documentElement.setAttribute('data-theme', theme.value)
+  const toggleTheme = (pay: string) => {
+    selectedTheme.value = pay
+    document.documentElement.setAttribute('data-theme', selectedTheme.value)
   }
 
-  return { theme, toggleTheme }
+  return { themes, selectedTheme, toggleTheme }
 })
