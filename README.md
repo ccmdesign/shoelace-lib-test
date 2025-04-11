@@ -82,11 +82,14 @@ export default defineNuxtPlugin(async () => {
 
 ### Component Usage
 
-Just call the component directly:
+Import the component in the plugin file shoelace.client.ts.
+
+Then call the component directly:
 
 ```html
 <sl-button>Button</sl-button>
 ```
+
 
 ## Nuxt and Shoelace Docs
 
