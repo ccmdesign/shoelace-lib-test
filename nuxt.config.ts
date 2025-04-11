@@ -44,6 +44,7 @@ export default defineNuxtConfig({
   css: [
     '@shoelace-style/shoelace/dist/themes/light.css',
     '@shoelace-style/shoelace/dist/themes/dark.css',
+    '/public/_everylayout.css',
     '/public/custom-001.css',
   ],
 

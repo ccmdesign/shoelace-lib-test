@@ -1,0 +1,55 @@
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * {
+  margin-block: 0;
+}
+
+.stack > * + * {
+  margin-block-start: var(--_stack-space, 1.5rem);
+}
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--_cluster-space, 1rem);
+  justify-content: flex-start;
+  align-items: center;
+
+  /* data-split - isso é um modifier do cluster, que empurra os elementos para o lado oposto do parent */
+  [data-split] {
+    margin-left: auto;
+  }
+}
+
+.split-50-50 {
+  display: flex;
+  gap: var(--base-gutter);
+}
+
+.repel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.center {
+  box-sizing: content-box;
+  margin-inline: auto;
+  max-inline-size: var(--_center-measure);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--_grid-gap, var(--base-gutter));
+}
+
+.float/:left { float: left; }
+
+.aux {
+  outline: 2px solid red;
+  background-color: rgba(255, 0, 0, 0.1);
+}

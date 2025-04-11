@@ -4,23 +4,10 @@ const { themes, selectedTheme, toggleTheme } = useThemeStore()
 
 </script>
 <template>
-  <div>
-    <!-- <span @click="store.toggleTheme">{{ actionLabel.toUpperCase() }}</span> -->
-    <select :value="selectedTheme" @change="toggleTheme($event.target.value)">
-      <option v-for="item of themes" :key="item" :value="item">
-        {{  item.toUpperCase() }}
-      </option>
-    </select>
-  </div>
+  <sl-select :value="selectedTheme" @change="toggleTheme($event.target.value)" size="small">
+    <sl-option v-for="item of themes" :key="item" :value="item" size="small">{{  item.toUpperCase() }}</sl-option>
+  </sl-select>
 </template>
 <style scoped lang="scss">
-select {
-  text-align: center;
-  background-color: #444;
-  color: white;
-  border: none;
-  padding: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-}
+
 </style>

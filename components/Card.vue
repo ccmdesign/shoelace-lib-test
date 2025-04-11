@@ -74,8 +74,9 @@ const isActive = ref(false);
 <style lang="scss" scoped>
 
 // you can define style to a component section using parts;
-.card::part(base) {
-  background-color: var(--custom-color-secondary-200);
+.card {
+  h3 { font-family: var(--sl-font-sans); }
+  
 }
 
 // or add a class to the component

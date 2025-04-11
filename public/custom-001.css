@@ -2,47 +2,51 @@
 /* Default shoelace theme will be subscribed to the custom-001 theme if you set :root. 
 More about shoelace themes: https://shoelace.style/themes */
 
+/* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+
+:root {
+  --sl-font-size-x-small: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
+  --sl-font-szie-small: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
+  --sl-font-size-medium: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+  --sl-font-size-large: clamp(1.35rem, 1.2761rem + 0.3696vw, 1.5625rem);
+  --sl-font-size-x-large: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem);
+  --sl-font-size-2x-large: clamp(1.944rem, 1.771rem + 0.8651vw, 2.4414rem);
+  --sl-font-size-3x-large: clamp(2.3328rem, 2.0827rem + 1.2504vw, 3.0518rem);
+  --sl-font-size-4x-large: clamp(2.7994rem, 2.4462rem + 1.7658vw, 3.8147rem);
+}
+
+:root {
+  --sl-spacing-3x-small: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+  --sl-spacing-2x-small: clamp(0.5625rem, 0.5408rem + 0.1087vw, 0.625rem);
+  --sl-spacing-x-small: clamp(0.875rem, 0.8533rem + 0.1087vw, 0.9375rem);
+  --sl-spacing-small: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+  --sl-spacing-medium: clamp(1.6875rem, 1.6223rem + 0.3261vw, 1.875rem);
+  --sl-spacing-large: clamp(2.25rem, 2.163rem + 0.4348vw, 2.5rem);
+  --sl-spacing-x-large: clamp(3.375rem, 3.2446rem + 0.6522vw, 3.75rem);
+  --sl-spacing-2x-large: clamp(4.5rem, 4.3261rem + 0.8696vw, 5rem);
+  --sl-spacing-3x-large: clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem);
+}
+
+.base-section {
+  padding-block: var(--sl-spacing-x-large);
+}
+
+
+
 :host,
 .sl-theme-custom-001 {
---custom-color-primary-50: rgb(249 249 250);
---custom-color-primary-100: rgb(234 237 238);
---custom-color-primary-200: rgb(218 223 226);
---custom-color-primary-300: rgb(201 208 212);
---custom-color-primary-400: rgb(177 187 193);
---custom-color-primary-500: rgb(148 162 170);
---custom-color-primary-600: rgb(117 135 145);
---custom-color-primary-700: rgb(90 111 124);
---custom-color-primary-800: rgb(68 92 106);
---custom-color-primary-900: rgb(38 67 83);
---custom-color-primary-950: rgb(14 41 57);
---custom-color-primary: rgb(14 41 57);
-
---custom-color-secondary-50: rgb(254 249 239);
---custom-color-secondary-100: rgb(252 234 203);
---custom-color-secondary-200: rgb(249 218 162);
---custom-color-secondary-300: rgb(246 200 114);
---custom-color-secondary-400: rgb(239 174 53);
---custom-color-secondary-500: rgb(206 150 46);
---custom-color-secondary-600: rgb(170 124 38);
---custom-color-secondary-700: rgb(139 101 31);
---custom-color-secondary-800: rgb(115 84 26);
---custom-color-secondary-900: rgb(82 59 18);
---custom-color-secondary-950: rgb(50 37 11);
-
---custom-color-tertiary-50: rgb(244 251 251);
---custom-color-tertiary-100: rgb(217 241 241);
---custom-color-tertiary-200: rgb(187 230 230);
---custom-color-tertiary-300: rgb(154 218 217);
---custom-color-tertiary-400: rgb(107 201 200);
---custom-color-tertiary-500: rgb(42 177 175);
---custom-color-tertiary-600: rgb(1 147 145);
---custom-color-tertiary-700: rgb(1 121 119);
---custom-color-tertiary-800: rgb(1 100 99);
---custom-color-tertiary-900: rgb(0 71 70);
---custom-color-tertiary-950: rgb(0 44 44);
-
-
 /* Check out the card's button to see the custom spacing variantion btwn themes */
---sl-spacing-large: 1.5rem;
+
+--sl-border-radius-large: 1rem;
+--sl-border-radius-medium: 0.5rem;
+--sl-border-radius-small: 0.25rem;
+--sl-border-radius-xsmall: 0.125rem;
+
+.card {
+  --border-radius: var(--sl-border-radius-large);
+  --sl-panel-background-color: var(--custom-color-primary-200);
+}
 
 }
