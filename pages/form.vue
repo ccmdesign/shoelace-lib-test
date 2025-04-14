@@ -6,9 +6,8 @@ const data = await queryContent(locale.value).where({ lang: locale.value }).find
 
 <template>
   <div class="container">
-    <Stack space="sm">
-      <Card :card="data" />
-      <Card :card="data" />
+    <Stack space="xl">
+      <ProgressForm />
     </Stack>
   </div>
 

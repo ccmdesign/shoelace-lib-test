@@ -44,5 +44,6 @@ More about shoelace themes: https://shoelace.style/themes */
 
 /* Check out the card's button to see the custom spacing variantion btwn themes */
 --sl-spacing-large: 1.5rem;
+--sl-spacing-xlarge: 3rem;
 
 }

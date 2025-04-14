@@ -2,6 +2,7 @@
 const router = useRouter();
 const { locale, locales } = useI18n()
 const switchLocalePath = useSwitchLocalePath();
+const localePath = useLocalePath();
 
 const onLocaleChanged = (code) => {
   router.push({ path: switchLocalePath(code) })
@@ -11,9 +12,8 @@ const onLocaleChanged = (code) => {
 <template>
   <nav>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a :href="localePath('/')">Home</a></li>
+      <li><a :href="localePath('/form')">Form</a></li>
       <div class="language-switcher">
         <select :value="locale" @change="onLocaleChanged($event.target.value)">
           <option v-for="lang of locales" :key="lang.code" :value="lang.code">
