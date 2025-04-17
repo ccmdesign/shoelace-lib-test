@@ -51,6 +51,11 @@ watch(() => state, (newState) => {
     <sl-icon slot="icon" name="check2-circle"></sl-icon>
     Thank you to sign the newsletter.
   </sl-alert>
+  
+  <p> {{ state.name }} </p>
+  <p> {{ state.email }} </p>
+  <p> {{ state.bio }} </p>
+  <p> {{ state.date }} </p>
 
 </template>
 

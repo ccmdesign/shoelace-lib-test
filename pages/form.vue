@@ -1,6 +1,4 @@
 <script setup>
-const { locale } = useI18n()
-const data = await queryContent(locale.value).where({ lang: locale.value }).findOne()
 
 </script>
 
